@@ -1,16 +1,16 @@
 import clsx from "clsx";
 
-const GlassPane = ({
-  children,
+const Card = ({
   className,
+  children,
 }: {
-  children: React.ReactNode;
   className?: string;
+  children: React.ReactNode;
 }) => {
   return (
     <div
       className={clsx(
-        "glass rounded-2xl border-solid border-2 border-gray-200",
+        "rounded-3xl px-10 py-4 drop-shadow-xl bg-white",
         className
       )}
     >
@@ -19,4 +19,4 @@ const GlassPane = ({
   );
 };
 
-export default GlassPane;
+export default Card;
